@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,7 +25,7 @@ echo 'Today is ' . date("l") . "\n"; //output the current day in the format "Fri
 echo 'Today is ' . date("l M j, Y") . "\n"; //look up how I got this
 
 //4 marks
-echo 'Today is ' . date("") . " in the year " . date("") . "\n\n"; //output "Today is Fri March 27 in the year 2020"
+echo 'Today is ' . date("D F j") . " in the year " . date("Y") . "\n\n"; //output "Today is Fri March 27 in the year 2020"
 
 echo "<hr>"; //some spacing
 
@@ -36,7 +34,8 @@ echo "Unix time right now is: " . time() . "\n"; //refresh your browser to watch
 echo "The time right now is: " . date("H:m:s", time()) . "\n";
 
 // 3 marks
-echo "The time in 2 hours from now is: " . date("H:m:s", time() + ( *  * )) . "\n";//check the php manual
+$twoHoursInMiliseconds = 2*60*60*1000;
+echo "The time in 2 hours from now is: " . date("H:m:s", time() + $twoHoursInMiliseconds) . "\n";//check the php manual
 
 echo "<hr>"; //some spacing
 
@@ -109,13 +108,14 @@ if(isset($b)){
 echo "<hr>"; //some spacing
 //Change $a to the value zero and do an if/else statement to output the value of $a
 // 5 marks
-
+/*
 if(){
 
 
 }else{
 
 }
+*/
 
 echo "<hr>"; //some spacing
 //How to use setcookie() https://www.php.net/manual/en/function.setcookie.php
