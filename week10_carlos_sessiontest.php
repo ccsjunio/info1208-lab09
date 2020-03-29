@@ -30,7 +30,7 @@
   <div class="container">
     <div class="card">
       <div class="card-header">
-        The value of the custom session variable is:
+        The value of the custom session variable is: (2 marks)
       </div><!-- end of card-header -->
       <div class="card-body">
         <?php
